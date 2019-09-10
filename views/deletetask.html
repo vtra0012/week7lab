@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <link rel = "stylesheet" href = "css/styles.css">
+    <img src = "Monash_Header.jpg" />
+        
+
+    <h1> Delete Task</h1> </br>
+    <h1>
+        <a href="/">Add Developer</a>
+        <a href="/getdevelopers"> List Developers</a>
+        <a href="/addtask"> Add Task</a>
+        <a href="/gettasks"> List Tasks</a>
+        <a href="/deletetask"> Delete Task</a>
+        <a href="/deletecomplete"> Delete Complete Tasks</a>
+        <a href="/updatetask"> Update Task</a>
+    </h1>
+    <form action="/deletetaskdata" method="POST">
+        Task ID <input type="text" method="POST" name="tid" /> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+</body>
+</html>

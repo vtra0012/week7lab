@@ -1,0 +1,52 @@
+<html>
+<head>
+    <head>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+        </style>
+    </head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+<body>
+    <link rel = "stylesheet" href = "css/styles.css">
+    <img src = "Monash_Header.jpg" />
+    
+    <h1> List Developers </h1> </br>
+    <h1>
+        <a href="/">Add Developer</a>
+        <a href="/getdevelopers"> List Developers</a>
+        <a href="/addtask"> Add Task</a>
+        <a href="/gettasks"> List Tasks</a>
+        <a href="/deletetask"> Delete Task</a>
+        <a href="/deletecomplete"> Delete Complete Tasks</a>
+        <a href="/updatetask"> Update Task</a>
+    </h1>
+
+    
+    <table style = "width: 90%">
+            <tr>
+                <td>Developer ID</td>
+                <td>Last Name</td>
+                <td>First Name</td>
+                <td>Address</td>
+                
+            </tr>
+            
+            <% for (let i=0;i<devDb.length;i++){ %>
+                <tr>
+                    <td> <%= devDb[i]._id %> </td>
+                    <td> <%= devDb[i].name.lname %> </td>
+                    <td> <%= devDb[i].name.fname %> </td>
+                    <td> <%= devDb[i].address.unit%> <%= devDb[i].address.street %>, <%= devDb[i].address.suburb %>, <%= devDb[i].address.state %></td>
+                </tr>
+                <%}%>
+    </table>
+
+
+</body>
+</html>
